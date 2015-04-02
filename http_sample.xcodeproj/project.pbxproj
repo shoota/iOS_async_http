@@ -14,6 +14,7 @@
 		742906131ACCD30200C052A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 742906121ACCD30200C052A2 /* Images.xcassets */; };
 		742906161ACCD30200C052A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 742906141ACCD30200C052A2 /* LaunchScreen.xib */; };
 		742906221ACCD30200C052A2 /* http_sampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 742906211ACCD30200C052A2 /* http_sampleTests.m */; };
+		7429062D1ACCD66F00C052A2 /* WeatherApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429062C1ACCD66F00C052A2 /* WeatherApi.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		7429061B1ACCD30200C052A2 /* http_sampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = http_sampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		742906201ACCD30200C052A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		742906211ACCD30200C052A2 /* http_sampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = http_sampleTests.m; sourceTree = "<group>"; };
+		7429062B1ACCD66F00C052A2 /* WeatherApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherApi.h; sourceTree = "<group>"; };
+		7429062C1ACCD66F00C052A2 /* WeatherApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherApi.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				742906121ACCD30200C052A2 /* Images.xcassets */,
 				742906141ACCD30200C052A2 /* LaunchScreen.xib */,
 				742906051ACCD30200C052A2 /* Supporting Files */,
+				7429062B1ACCD66F00C052A2 /* WeatherApi.h */,
+				7429062C1ACCD66F00C052A2 /* WeatherApi.m */,
 			);
 			path = http_sample;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7429060E1ACCD30200C052A2 /* ViewController.m in Sources */,
+				7429062D1ACCD66F00C052A2 /* WeatherApi.m in Sources */,
 				7429060B1ACCD30200C052A2 /* AppDelegate.m in Sources */,
 				742906081ACCD30200C052A2 /* main.m in Sources */,
 			);
@@ -344,6 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = http_sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = http_sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +420,7 @@
 				742906271ACCD30200C052A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		742906281ACCD30200C052A2 /* Build configuration list for PBXNativeTarget "http_sampleTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +429,7 @@
 				7429062A1ACCD30200C052A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

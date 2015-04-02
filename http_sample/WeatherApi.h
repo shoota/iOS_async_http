@@ -1,16 +1,13 @@
 //
-//  ViewController.h
+//  WeatherApi.h
 //  http_sample
 //
 //  Created by kumano shuta on 2015/04/02.
 //  Copyright (c) 2015年 shoota. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "WeatherApi.h"
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-
+@interface WeatherApi : NSObject <NSURLConnectionDataDelegate>
 
 @end
-
