@@ -29,19 +29,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSm-O6-Vdf">
+                                <rect key="frame" x="284" y="515" width="33" height="30"/>
+                                <state key="normal" title="hello">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iv2-ro-qxa" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="EDH-mH-wIg"/>
-                            <constraint firstItem="iv2-ro-qxa" firstAttribute="centerX" secondItem="cmi-DP-YpC" secondAttribute="centerX" id="L2U-NE-RSc"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cmi-DP-YpC" secondAttribute="bottom" constant="93" id="a7b-Ub-Slu"/>
-                            <constraint firstItem="iv2-ro-qxa" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="bGQ-So-d4g"/>
-                            <constraint firstItem="iv2-ro-qxa" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="9" id="d9a-c3-GZ2"/>
-                            <constraint firstItem="cmi-DP-YpC" firstAttribute="top" secondItem="iv2-ro-qxa" secondAttribute="bottom" constant="41" id="onC-QQ-K9e"/>
+                            <constraint firstItem="iv2-ro-qxa" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="0ku-pz-rN1"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="OSm-O6-Vdf" secondAttribute="bottom" constant="55" id="1N7-eF-vcy"/>
+                            <constraint firstItem="OSm-O6-Vdf" firstAttribute="top" secondItem="cmi-DP-YpC" secondAttribute="bottom" constant="8" symbolic="YES" id="5ie-zS-YvJ"/>
+                            <constraint firstItem="iv2-ro-qxa" firstAttribute="centerX" secondItem="cmi-DP-YpC" secondAttribute="centerX" id="62I-nB-gN0"/>
+                            <constraint firstItem="cmi-DP-YpC" firstAttribute="top" secondItem="iv2-ro-qxa" secondAttribute="bottom" constant="41" id="IBW-Rd-ocg"/>
+                            <constraint firstItem="OSm-O6-Vdf" firstAttribute="centerX" secondItem="cmi-DP-YpC" secondAttribute="centerX" id="Lem-1D-LDE"/>
+                            <constraint firstItem="iv2-ro-qxa" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="XR6-6o-JXp"/>
+                            <constraint firstItem="iv2-ro-qxa" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="9" id="w5g-1a-ObV"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="getButton" destination="cmi-DP-YpC" id="udV-kT-jEC"/>
+                        <outlet property="hello" destination="OSm-O6-Vdf" id="VRI-WZ-L9K"/>
                         <outlet property="jsonview" destination="iv2-ro-qxa" id="5cu-Q3-zMf"/>
                     </connections>
                 </viewController>

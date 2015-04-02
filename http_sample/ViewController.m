@@ -11,6 +11,7 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *getButton;
+@property (weak, nonatomic) IBOutlet UIButton *hello;
 @property (weak, nonatomic) IBOutlet UITextView *jsonview;
 @end
 
@@ -20,6 +21,7 @@
     [super viewDidLoad];
     
     [self.getButton addTarget:self action:@selector(getData) forControlEvents:UIControlEventTouchUpInside];
+    [self.hello addTarget:self action:@selector(helloColor) forControlEvents:UIControlEventTouchUpInside];
     
     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
     [nc addObserver:self selector:@selector(responseCallBack:) name:@"responseWeather" object:nil];
@@ -48,11 +50,17 @@
     
     // send
     NSURLConnection *con = [[NSURLConnection alloc] initWithRequest:[NSURLRequest requestWithURL:url] delegate:api];
-    
+
+    [self.jsonview setText:@"wating ...."];
+    self.view.backgroundColor = [UIColor whiteColor];
     if(!con) {
         NSLog(@"can not send");
     }
-
 }
+
+- (void) helloColor {
+    self.view.backgroundColor = [UIColor blueColor];
+}
+
 
 @end
